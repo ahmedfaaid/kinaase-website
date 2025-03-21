@@ -1,5 +1,5 @@
 {
-  "name": "my-turborepo",
+  "name": "kinaase-website",
   "private": true,
   "scripts": {
     "build": "turbo run build",
