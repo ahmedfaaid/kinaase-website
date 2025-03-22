@@ -50,7 +50,7 @@ export default function Navbar() {
   ];
 
   const isActive = (path: string) => {
-    return location.pathname === path;
+    return pathname === path;
   };
 
   const navbarClasses = `fixed top-0 w-full z-50 transition-all duration-300 ${
@@ -75,9 +75,7 @@ export default function Navbar() {
               <Link
                 key={index}
                 href={link.path}
-                className={`font-medium hover:text-secondary transition-colors relative ${
-                  isActive(link.path) ? 'text-secondary' : 'text-white'
-                }`}
+                className={`font-medium hover:text-secondary transition-colors relative ${isScrolled ? `${isActive(link.path) ? 'text-secondary' : ''}` : 'text-white'}`}
               >
                 {link.name}
                 {isActive(link.path) && (
@@ -90,7 +88,7 @@ export default function Navbar() {
             ) : (
               <div key={index} className='relative group'>
                 <button
-                  className='flex items-center font-medium text-white hover:text-secondary transition-colors'
+                  className={`flex items-center font-medium ${isScrolled ? `` : 'text-white'} hover:text-secondary transition-colors`}
                   onClick={() => setServicesOpen(!servicesOpen)}
                 >
                   {link.name}
