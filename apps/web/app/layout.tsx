@@ -1,6 +1,6 @@
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { AnimatePresence } from 'framer-motion';
 import type { Metadata } from 'next';
+import Providers from '../components/providers';
 import { Toaster as Sonner } from '../components/ui/sonner';
 import { Toaster } from '../components/ui/toaster';
 import { TooltipProvider } from '../components/ui/tooltip';
@@ -12,8 +12,6 @@ export const metadata: Metadata = {
   description: 'Kinaase'
 };
 
-const queryClient = new QueryClient();
-
 export default function RootLayout({
   children
 }: Readonly<{
@@ -22,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body>
-        <QueryClientProvider client={queryClient}>
+        <Providers>
           <TooltipProvider>
             <Toaster />
             <Sonner />
@@ -30,7 +28,7 @@ export default function RootLayout({
               <Template>{children}</Template>
             </AnimatePresence>
           </TooltipProvider>
-        </QueryClientProvider>
+        </Providers>
       </body>
     </html>
   );
