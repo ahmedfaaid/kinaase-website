@@ -2,7 +2,7 @@
 
 import AboutKinaase from '../components/sections/about-kinaase';
 import Hero from '../components/sections/hero';
-import CTA from '../components/sections/homeCta';
+import CTA from '../components/sections/home-cta';
 import Services from '../components/sections/services';
 import Stats from '../components/sections/stats';
 import PageTransition from '../components/ui/PageTransition';
