@@ -75,22 +75,22 @@ export default function Navbar() {
               <Link
                 key={index}
                 href={link.path}
-                className={`font-medium hover:text-primary-teal transition-colors relative ${
-                  isActive(link.path) ? 'text-primary-teal' : 'text-gray-700'
+                className={`font-medium hover:text-secondary transition-colors relative ${
+                  isActive(link.path) ? 'text-secondary' : 'text-white'
                 }`}
               >
                 {link.name}
                 {isActive(link.path) && (
                   <motion.div
                     layoutId='navbar-indicator'
-                    className='absolute -bottom-1 left-0 right-0 h-0.5 bg-primary-teal'
+                    className='absolute -bottom-1 left-0 right-0 h-0.5 bg-secondary'
                   />
                 )}
               </Link>
             ) : (
               <div key={index} className='relative group'>
                 <button
-                  className='flex items-center font-medium text-gray-700 hover:text-primary-teal transition-colors'
+                  className='flex items-center font-medium text-white hover:text-secondary transition-colors'
                   onClick={() => setServicesOpen(!servicesOpen)}
                 >
                   {link.name}
