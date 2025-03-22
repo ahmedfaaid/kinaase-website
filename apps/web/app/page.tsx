@@ -1,8 +1,8 @@
 'use client';
 
 import AboutKinaase from '../components/sections/about-kinaase';
-import CTA from '../components/sections/cta';
 import Hero from '../components/sections/hero';
+import CTA from '../components/sections/homeCta';
 import Services from '../components/sections/services';
 import Stats from '../components/sections/stats';
 import PageTransition from '../components/ui/PageTransition';
