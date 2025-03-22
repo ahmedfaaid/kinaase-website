@@ -2,9 +2,12 @@
 
 import { AnimatePresence, motion } from 'framer-motion';
 import { ChevronDown, Menu, X } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import LogoRegular from '../public/images/logo/kinaase logo-01.svg';
+import LogoWhite from '../public/images/logo/kinaase logo-05.svg';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -58,9 +61,11 @@ export default function Navbar() {
     <nav className={navbarClasses}>
       <div className='container-custom flex justify-between items-center'>
         <Link href='/' className='flex items-center'>
-          <span className='text-2xl font-heading font-bold text-primary-teal'>
-            Kinaase
-          </span>
+          <Image
+            src={isScrolled ? LogoRegular : LogoWhite}
+            alt='Kinaase Logo'
+            className='w-44'
+          />
         </Link>
 
         {/* Desktop Navigation */}
