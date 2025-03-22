@@ -1,5 +1,6 @@
 import { AnimatePresence } from 'framer-motion';
 import type { Metadata } from 'next';
+import Footer from '../components/footer';
 import Navbar from '../components/navbar';
 import Providers from '../components/providers';
 import { Toaster as Sonner } from '../components/ui/sonner';
@@ -29,6 +30,7 @@ export default function RootLayout({
             <AnimatePresence mode='wait'>
               <Template>{children}</Template>
             </AnimatePresence>
+            <Footer />
           </TooltipProvider>
         </Providers>
       </body>
