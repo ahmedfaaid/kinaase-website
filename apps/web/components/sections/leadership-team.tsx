@@ -52,7 +52,7 @@ export default function LeadershipTeam() {
           <h2 className='section-title mb-4'>Meet Our Leaders</h2>
           <p className='section-subtitle'>
             Our leadership team brings together diverse expertise and a shared
-            commitment to excellence, guiding Kinaase's mission to deliver
+            commitment to excellence, guiding Kinaase&apos;s mission to deliver
             exceptional corporate governance and technology solutions.
           </p>
         </motion.div>
