@@ -3,7 +3,7 @@ import { ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRef } from 'react';
-import { fadeInUp } from '../../lib/animations';
+import { fadeInUp } from '../../../lib/animations';
 
 export default function CompanyHistory() {
   const historyRef = useRef<HTMLDivElement>(null);

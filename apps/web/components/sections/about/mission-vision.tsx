@@ -1,7 +1,7 @@
 import { motion, useInView } from 'framer-motion';
 import { Clock, Target } from 'lucide-react';
 import { useRef } from 'react';
-import { fadeInUp } from '../../lib/animations';
+import { fadeInUp } from '../../../lib/animations';
 
 export default function MissionVision() {
   const missionRef = useRef<HTMLDivElement>(null);

@@ -1,10 +1,10 @@
 'use client';
 
-import AboutCta from '../../components/sections/about-cta';
-import CompanyHistory from '../../components/sections/company-history';
-import CoreValues from '../../components/sections/core-values';
+import AboutCta from '../../components/sections/about/about-cta';
+import CompanyHistory from '../../components/sections/about/company-history';
+import CoreValues from '../../components/sections/about/core-values';
+import MissionVision from '../../components/sections/about/mission-vision';
 import Hero from '../../components/sections/hero';
-import MissionVision from '../../components/sections/mission-vision';
 import PageTransition from '../../components/ui/PageTransition';
 
 export default function About() {

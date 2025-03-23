@@ -1,7 +1,7 @@
 import { motion, useInView } from 'framer-motion';
 import { Check, Clock, Cpu, Shield, Target, Users } from 'lucide-react';
 import { useRef } from 'react';
-import { fadeInUp, staggerContainer } from '../../lib/animations';
+import { fadeInUp, staggerContainer } from '../../../lib/animations';
 
 export default function CoreValues() {
   const valuesRef = useRef<HTMLDivElement>(null);
