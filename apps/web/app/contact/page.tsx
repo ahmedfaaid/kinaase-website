@@ -1,8 +1,8 @@
 'use client';
 
-import ContactInfoForm from '../../components/sections/contact-info-form';
+import ContactInfoForm from '../../components/sections/contact/contact-info-form';
+import Map from '../../components/sections/contact/map';
 import Hero from '../../components/sections/hero';
-import Map from '../../components/sections/map';
 import PageTransition from '../../components/ui/PageTransition';
 
 export default function Contact() {

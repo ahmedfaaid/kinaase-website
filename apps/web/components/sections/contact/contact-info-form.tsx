@@ -1,8 +1,8 @@
 import { motion, useInView } from 'framer-motion';
 import { Clock, Mail, MapPin, Phone } from 'lucide-react';
 import { useRef } from 'react';
-import { fadeInUp } from '../../lib/animations';
-import ContactForm from '../ui/ContactForm';
+import { fadeInUp } from '../../../lib/animations';
+import ContactForm from '../../ui/ContactForm';
 
 export default function ContactInfoForm() {
   const contactRef = useRef<HTMLDivElement>(null);
