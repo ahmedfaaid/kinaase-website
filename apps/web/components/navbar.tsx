@@ -46,8 +46,11 @@ export default function Navbar() {
         { name: 'Technology Services', path: '/technology-services' }
       ]
     },
-    { name: 'Leadership', path: '/leadership' },
-    { name: 'Contact', path: '/contact' }
+    {
+      name: 'Products',
+      children: [{ name: 'Invenza', path: '/products/invenza' }]
+    },
+    { name: 'Leadership', path: '/leadership' }
   ];
 
   const isActive = (path: string) => {
