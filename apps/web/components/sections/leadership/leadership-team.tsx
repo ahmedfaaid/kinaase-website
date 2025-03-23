@@ -1,7 +1,7 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { fadeInUp, staggerContainer } from '../../lib/animations';
-import ProfileCard from '../ui/ProfileCard';
+import { fadeInUp, staggerContainer } from '../../../lib/animations';
+import ProfileCard from '../../ui/ProfileCard';
 
 export default function LeadershipTeam() {
   const teamRef = useRef<HTMLDivElement>(null);

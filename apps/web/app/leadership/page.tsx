@@ -1,9 +1,9 @@
 'use client';
 
-import AdvisoryBoard from '../../components/sections/advisory-board';
 import Hero from '../../components/sections/hero';
-import LeadershipCta from '../../components/sections/leadership-cta';
-import LeadershipTeam from '../../components/sections/leadership-team';
+import AdvisoryBoard from '../../components/sections/leadership/advisory-board';
+import LeadershipCta from '../../components/sections/leadership/leadership-cta';
+import LeadershipTeam from '../../components/sections/leadership/leadership-team';
 import PageTransition from '../../components/ui/PageTransition';
 
 export default function Leadership() {
