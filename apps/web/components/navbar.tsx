@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { ChevronDown, Menu, X } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useSelectedLayoutSegment } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import LogoRegular from '../public/images/logo/kinaase logo-01.svg';
 import LogoWhite from '../public/images/logo/kinaase logo-05.svg';
@@ -14,6 +14,7 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const pathname = usePathname();
+  const segment = useSelectedLayoutSegment();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
@@ -53,8 +54,14 @@ export default function Navbar() {
     return pathname === path;
   };
 
+  const isNotFound = (segment: string | null) => {
+    return segment === '/_not-found';
+  };
+
   const navbarClasses = `fixed top-0 w-full z-50 transition-all duration-300 ${
-    isScrolled ? 'bg-white shadow-soft py-3' : 'bg-transparent py-5'
+    isScrolled
+      ? 'bg-white shadow-soft py-3'
+      : `${isNotFound(segment) ? 'bg-primary' : 'bg-transparent py-5'}`
   }`;
 
   return (
