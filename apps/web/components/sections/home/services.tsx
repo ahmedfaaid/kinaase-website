@@ -10,8 +10,8 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import { useRef } from 'react';
-import { fadeInUp, staggerContainer } from '../../lib/animations';
-import ServiceCard from '../ui/ServiceCard';
+import { fadeInUp, staggerContainer } from '../../../lib/animations';
+import ServiceCard from '../../ui/ServiceCard';
 
 export default function Services() {
   const servicesRef = useRef<HTMLDivElement>(null);

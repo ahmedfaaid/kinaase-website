@@ -1,6 +1,6 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { fadeInUp, staggerContainer } from '../../lib/animations';
+import { fadeInUp, staggerContainer } from '../../../lib/animations';
 
 export default function Stats() {
   const statsRef = useRef<HTMLDivElement>(null);

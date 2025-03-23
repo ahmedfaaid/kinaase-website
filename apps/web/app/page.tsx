@@ -1,10 +1,10 @@
 'use client';
 
-import AboutKinaase from '../components/sections/about-kinaase';
 import Hero from '../components/sections/hero';
-import CTA from '../components/sections/home-cta';
-import Services from '../components/sections/services';
-import Stats from '../components/sections/stats';
+import AboutKinaase from '../components/sections/home/about-kinaase';
+import CTA from '../components/sections/home/home-cta';
+import Services from '../components/sections/home/services';
+import Stats from '../components/sections/home/stats';
 import PageTransition from '../components/ui/PageTransition';
 
 export default function Home() {
