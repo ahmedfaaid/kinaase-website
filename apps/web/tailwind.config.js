@@ -136,8 +136,13 @@ export default {
         'fade-in': 'fade-in 0.5s ease-out',
         'fade-in-up': 'fade-in-up 0.7s ease-out',
         'fade-in-down': 'fade-in-down 0.7s ease-out',
+        'fade-in-left': 'fade-in-left 0.6s ease-out',
+        'fade-in-right': 'fade-in-right 0.6s ease-out',
+        float: 'float 3s ease-in-out infinite',
+        'pulse-slow': 'pulse-slow 3s ease-in-out infinite',
         'slide-in-right': 'slide-in-right 0.3s ease-out',
-        'slide-out-left': 'slide-out-left 0.3s ease-out'
+        'slide-out-left': 'slide-out-left 0.3s ease-out',
+        'blur-in': 'blur-in 0.6s ease-out'
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
