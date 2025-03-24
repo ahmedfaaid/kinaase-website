@@ -34,7 +34,16 @@ export default {
           teal: '#1c5e5c',
           light: '#2a8a87',
           dark: '#134240',
-          softer: '#e6efee'
+          softer: '#e6efee',
+          100: '#799c9a',
+          200: '#638d8a',
+          300: '#4d7d7b',
+          400: '#366e6c',
+          500: '#1c5f5d',
+          600: '#175250',
+          700: '#124443',
+          800: '#0d3837',
+          900: '#082c2a'
         },
         secondary: {
           DEFAULT: 'hsl(var(--secondary))',
@@ -69,6 +78,19 @@ export default {
           'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
           border: 'hsl(var(--sidebar-border))',
           ring: 'hsl(var(--sidebar-ring))'
+        },
+        invenza: {
+          50: '#f0f7ff',
+          100: '#e0eefe',
+          200: '#bae0fd',
+          300: '#7cc9fc',
+          400: '#38acf8',
+          500: '#0e8fe9',
+          600: '#0071c7',
+          700: '#0059a1',
+          800: '#004c85',
+          900: '#05406e',
+          950: '#022a4b'
         }
       },
       borderRadius: {
