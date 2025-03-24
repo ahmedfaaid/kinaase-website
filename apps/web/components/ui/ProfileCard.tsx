@@ -10,6 +10,8 @@ type ProfileCardProps = {
   imageUrl: string;
   linkedinUrl?: string;
   twitterUrl?: string;
+  imageWidth?: number;
+  imageHeight?: number;
 };
 
 const ProfileCard = ({
@@ -18,7 +20,9 @@ const ProfileCard = ({
   bio,
   imageUrl,
   linkedinUrl,
-  twitterUrl
+  twitterUrl,
+  imageWidth = 1000,
+  imageHeight = 1000
 }: ProfileCardProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -33,6 +37,8 @@ const ProfileCard = ({
           src={imageUrl}
           alt={name}
           className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-105'
+          width={imageWidth}
+          height={imageHeight}
         />
         <div className='absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60'></div>
 
