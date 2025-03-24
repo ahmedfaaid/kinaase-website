@@ -14,6 +14,8 @@ export default function LeadershipTeam() {
       bio: 'Yasmine Wuruche Alhassan is the visionary leader behind Kinaase, bringing over 20 years of experience in corporate governance and strategic leadership. Prior to founding Kinaase, Yasmine held executive positions at several multinational corporations, where she led initiatives to strengthen governance structures and improve board effectiveness. She holds an MBA from Harvard Business School and serves on multiple corporate and non-profit boards. Her expertise in corporate governance has made her a sought-after speaker and advisor for organizations seeking to enhance their governance frameworks.',
       imageUrl:
         'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      imageWidth: 606,
+      imageHeight: 909,
       linkedinUrl: '#',
       twitterUrl: '#'
     },
@@ -23,6 +25,8 @@ export default function LeadershipTeam() {
       bio: "Ahmed Faaid Alhassan leads Kinaase's technology initiatives, bringing a wealth of experience in digital transformation, AI implementation, and technology strategy. With a background in computer science and an advanced degree in artificial intelligence from MIT, Ahmed has spearheaded numerous successful technology projects for Fortune 500 companies. Before joining Kinaase, he was the Head of Digital Innovation at a leading technology consulting firm, where he developed cutting-edge solutions for complex business challenges. Ahmed is passionate about leveraging technology to drive business value and is recognized as a thought leader in the field of AI and machine learning.",
       imageUrl:
         'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      imageWidth: 606,
+      imageHeight: 909,
       linkedinUrl: '#',
       twitterUrl: '#'
     },
@@ -32,6 +36,8 @@ export default function LeadershipTeam() {
       bio: "Khalid Keith Iddisah oversees Kinaase's operations, ensuring the efficient delivery of services and the implementation of strategic initiatives. With extensive experience in operations management and business process optimization, Khalid has a proven track record of improving organizational performance and client satisfaction. Before joining Kinaase, he served as the Operations Director for a global consulting firm, where he led teams across multiple regions and implemented innovative approaches to service delivery. Khalid holds an MBA from INSEAD and is certified in Lean Six Sigma. His operational expertise and client-focused approach have been instrumental in Kinaase's growth and success.",
       imageUrl:
         'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      imageWidth: 606,
+      imageHeight: 909,
       linkedinUrl: '#',
       twitterUrl: '#'
     }
@@ -72,6 +78,8 @@ export default function LeadershipTeam() {
                 imageUrl={leader.imageUrl}
                 linkedinUrl={leader.linkedinUrl}
                 twitterUrl={leader.twitterUrl}
+                imageWidth={leader.imageWidth}
+                imageHeight={leader.imageHeight}
               />
             </motion.div>
           ))}
