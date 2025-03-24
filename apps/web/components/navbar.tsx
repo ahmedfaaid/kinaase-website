@@ -88,6 +88,7 @@ export default function Navbar() {
               src={isScrolled ? LogoRegular : LogoWhite}
               alt='Kinaase Logo'
               className='w-44'
+              priority
             />
           </Link>
 
