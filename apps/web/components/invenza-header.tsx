@@ -1,5 +1,7 @@
 import { Menu, X } from 'lucide-react';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { invenzaUrl } from '../lib/constants';
 import CtaBtn from './sections/invenza/cta-btn';
 
 export default function InvenzaHeader() {
@@ -24,36 +26,36 @@ export default function InvenzaHeader() {
     >
       <div className='container mx-auto px-4 md:px-6'>
         <div className='flex items-center justify-between'>
-          <a href='#' className='flex items-center'>
+          <Link href='#' className='flex items-center'>
             <span className='font-display font-bold text-2xl text-primary-700'>
               Invenza
             </span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className='hidden md:flex items-center space-x-6'>
-            <a href='#features' className='navbar-link'>
+            <Link href='#features' className='navbar-link'>
               Features
-            </a>
-            <a href='#pricing' className='navbar-link'>
+            </Link>
+            <Link href='#pricing' className='navbar-link'>
               Pricing
-            </a>
-            <a href='#testimonials' className='navbar-link'>
+            </Link>
+            <Link href='#testimonials' className='navbar-link'>
               Customers
-            </a>
-            <a href='#faq' className='navbar-link'>
+            </Link>
+            <Link href='#faq' className='navbar-link'>
               FAQ
-            </a>
+            </Link>
           </nav>
 
           <div className='hidden md:flex items-center space-x-4'>
             <a
-              href='#login'
+              href={`${invenzaUrl}/login`}
               className='text-sm font-medium text-gray-700 hover:text-invenza-600 transition-colors'
             >
               Login
             </a>
-            <CtaBtn href='#get-started' size='sm'>
+            <CtaBtn href={`${invenzaUrl}/register`} size='sm'>
               Get Started
             </CtaBtn>
           </div>
@@ -108,14 +110,14 @@ export default function InvenzaHeader() {
 
           <div className='border-t border-gray-200 pt-4 flex flex-col space-y-2'>
             <a
-              href='#login'
+              href={`${invenzaUrl}/login`}
               className='px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md'
               onClick={toggleMobileMenu}
             >
               Login
             </a>
             <CtaBtn
-              href='#get-started'
+              href={`${invenzaUrl}/register`}
               className='m-3'
               onClick={toggleMobileMenu}
             >

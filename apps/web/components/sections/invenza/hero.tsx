@@ -3,6 +3,7 @@
 import { BarChart, Package, Truck } from 'lucide-react';
 import Image from 'next/image';
 import { useEffect, useRef } from 'react';
+import { invenzaUrl } from '../../../lib/constants';
 import CtaBtn from './cta-btn';
 
 export default function Hero() {
@@ -50,7 +51,11 @@ export default function Hero() {
             </p>
 
             <div className='flex flex-col sm:flex-row gap-4 pt-2 animate-fade-in-up animate-delay-300'>
-              <CtaBtn href='#get-started' size='lg' className='group'>
+              <CtaBtn
+                href={`${invenzaUrl}/register`}
+                size='lg'
+                className='group'
+              >
                 Get Started
               </CtaBtn>
               <CtaBtn

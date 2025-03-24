@@ -1,4 +1,5 @@
 import { Check } from 'lucide-react';
+import { invenzaUrl } from '../../../lib/constants';
 import CtaBtn from './cta-btn';
 
 const pricingPlans = [
@@ -103,7 +104,7 @@ export default function Pricing() {
               </ul>
 
               <CtaBtn
-                href='#get-started'
+                href={`${invenzaUrl}/register`}
                 className={`w-full ${!plan.isPopular && 'bg-white border border-primary-600 text-primary-600 hover:bg-primary-50'}`}
                 variant={plan.isPopular ? 'default' : 'outline'}
               >

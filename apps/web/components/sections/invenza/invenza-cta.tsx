@@ -1,3 +1,4 @@
+import { invenzaUrl } from '../../../lib/constants';
 import CtaBtn from './cta-btn';
 
 export default function InvenzaCta() {
@@ -14,14 +15,14 @@ export default function InvenzaCta() {
           </p>
           <div className='flex flex-col sm:flex-row justify-center gap-4'>
             <CtaBtn
-              href='#get-started'
+              href={`${invenzaUrl}/register`}
               size='lg'
               className='bg-white text-primary-800 hover:bg-primary-100 group'
             >
               Get Started
             </CtaBtn>
             <CtaBtn
-              href='#contact-sales'
+              href={`${invenzaUrl}/login`}
               variant='outline'
               size='lg'
               className='bg-primary-800 border-primary-800 text-white hover:bg-primary-100 hover:border-primary-100 hover:text-white'
