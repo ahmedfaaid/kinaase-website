@@ -35,6 +35,7 @@ export default {
           light: '#2a8a87',
           dark: '#134240',
           softer: '#e6efee',
+          50: '#bbcdcb',
           100: '#799c9a',
           200: '#638d8a',
           300: '#4d7d7b',
@@ -43,7 +44,8 @@ export default {
           600: '#175250',
           700: '#124443',
           800: '#0d3837',
-          900: '#082c2a'
+          900: '#082c2a',
+          950: '#021514'
         },
         secondary: {
           DEFAULT: 'hsl(var(--secondary))',
