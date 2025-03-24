@@ -162,7 +162,7 @@ export default function Navbar() {
               transition={{ duration: 0.3 }}
               className='lg:hidden bg-white border-t border-gray-100 shadow-md'
             >
-              <div className='container-custom py-4 space-y-3'>
+              <div className='container-custom py-4 space-y-3 z-50'>
                 {navLinks.map((link, index) =>
                   !link.children ? (
                     <Link
@@ -232,7 +232,7 @@ export default function Navbar() {
       </nav>
       {pathname === '/products/invenza' && (
         <div
-          className={`fixed w-full z-50 ${isScrolled ? 'top-[85px]' : 'top-[105px]'}`}
+          className={`fixed w-full z-40 ${isScrolled ? 'top-[85px]' : 'top-[105px]'}`}
         >
           <InvenzaHeader />
         </div>
