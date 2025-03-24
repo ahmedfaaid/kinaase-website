@@ -149,6 +149,62 @@
   }
 }
 
+@layer components {
+  glass-card {
+    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-sm;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-700 to-primary-500;
+  }
+
+  .feature-icon-container {
+    @apply relative flex items-center justify-center w-12 h-12 rounded-xl mb-4 bg-primary-50;
+  }
+
+  .feature-icon-container svg {
+    @apply w-6 h-6 text-primary-600;
+  }
+
+  .testimonial-card {
+    @apply glass-card rounded-2xl p-6 transition-all duration-300 hover:shadow-md;
+  }
+
+  .navbar-link {
+    @apply relative text-sm text-gray-700 hover:text-invenza-600 transition-colors duration-200 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-invenza-500 after:transition-all hover:after:w-full;
+  }
+
+  .navbar-link.active {
+    @apply text-invenza-600 after:w-full;
+  }
+
+  .hero-glow {
+    @apply absolute w-[600px] h-[600px] rounded-full bg-invenza-400/20 blur-[100px] -z-10 animate-pulse-slow;
+  }
+}
+
+@layer utilities {
+  .animate-delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .animate-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animate-delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .animate-delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .animate-delay-500 {
+    animation-delay: 500ms;
+  }
+}
+
 /* Custom smooth scrolling */
 html {
   scroll-behavior: smooth;
