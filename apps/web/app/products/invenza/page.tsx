@@ -33,7 +33,7 @@ export default function Invenza() {
 
   return (
     <PageTransition>
-      <div className='min-h-screen bg-white'>
+      <div className='min-h-screen bg-white mt-[105px]'>
         <main>
           <Hero />
 
