@@ -11,7 +11,11 @@ import Template from './template';
 
 export const metadata: Metadata = {
   title: 'Kinaase',
-  description: 'Kinaase'
+  description:
+    '“Discover Kinaase Ltd, your trusted corporate services partner, offering expert solutions in corporate governance, business advisory, branding, HR management, and comprehensive IT services, including AI consulting, technology strategy, IT infrastructure, and application support. We empower businesses with tailored strategies for growth, compliance, and operational excellence. Let’s drive success together!”',
+  icons: {
+    icon: '/images/logo/kinaase logo-06.svg'
+  }
 };
 
 export default function RootLayout({
