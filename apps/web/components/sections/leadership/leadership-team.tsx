@@ -22,10 +22,9 @@ export default function LeadershipTeam() {
       name: 'Ahmed Faaid Alhassan',
       position: 'Chief Technology Officer',
       bio: "Ahmed Faaid Alhassan leads Kinaase's technology initiatives, bringing a wealth of experience in digital transformation, AI implementation, and technology strategy. With a background in computer science and an advanced degree in artificial intelligence from MIT, Ahmed has spearheaded numerous successful technology projects for Fortune 500 companies. Before joining Kinaase, he was the Head of Digital Innovation at a leading technology consulting firm, where he developed cutting-edge solutions for complex business challenges. Ahmed is passionate about leveraging technology to drive business value and is recognized as a thought leader in the field of AI and machine learning.",
-      imageUrl:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      imageWidth: 606,
-      imageHeight: 909,
+      imageUrl: '/images/leadership/ahmed-1.jpg',
+      imageWidth: 1024,
+      imageHeight: 683,
       linkedinUrl: '#',
       twitterUrl: '#'
     },
