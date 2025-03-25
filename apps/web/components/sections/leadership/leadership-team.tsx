@@ -12,10 +12,9 @@ export default function LeadershipTeam() {
       name: 'Yasmine Wuruche Alhassan',
       position: 'Chief Executive Officer',
       bio: 'Yasmine Wuruche Alhassan is the visionary leader behind Kinaase, bringing over 20 years of experience in corporate governance and strategic leadership. Prior to founding Kinaase, Yasmine held executive positions at several multinational corporations, where she led initiatives to strengthen governance structures and improve board effectiveness. She holds an MBA from Harvard Business School and serves on multiple corporate and non-profit boards. Her expertise in corporate governance has made her a sought-after speaker and advisor for organizations seeking to enhance their governance frameworks.',
-      imageUrl:
-        'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      imageWidth: 606,
-      imageHeight: 909,
+      imageUrl: '/images/leadership/yassy-1.jpeg',
+      imageWidth: 877,
+      imageHeight: 1080,
       linkedinUrl: '#',
       twitterUrl: '#'
     },
