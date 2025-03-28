@@ -1,9 +1,12 @@
 'use client';
 
 import BoardCertification from '../../components/sections/corporate-services/board-certification';
+import BusinessAvisory from '../../components/sections/corporate-services/business-advisory';
+import CompanySecretarial from '../../components/sections/corporate-services/company-secretarial';
 import CorporateCta from '../../components/sections/corporate-services/corporate-cta';
 import CorporateGovernance from '../../components/sections/corporate-services/corporate-governance';
 import CorporateStructure from '../../components/sections/corporate-services/corporate-structure';
+import RegulatoryCompliance from '../../components/sections/corporate-services/regulatory-compliance';
 import Services from '../../components/sections/corporate-services/services';
 import Hero from '../../components/sections/hero';
 import PageTransition from '../../components/ui/PageTransition';
@@ -30,6 +33,15 @@ export default function CorporateServices() {
 
         {/* Board Certification */}
         <BoardCertification />
+
+        {/* Corporate Compliance */}
+        <RegulatoryCompliance />
+
+        {/* Company Secretarial */}
+        <CompanySecretarial />
+
+        {/* Business Advisory */}
+        <BusinessAvisory />
 
         {/* CTA Section */}
         <CorporateCta />
