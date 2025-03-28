@@ -1,5 +1,12 @@
 import { motion, useInView } from 'framer-motion';
-import { Shield, User, Users } from 'lucide-react';
+import {
+  ClipboardCheck,
+  HandHelping,
+  NotebookPen,
+  Shield,
+  User,
+  Users
+} from 'lucide-react';
 import { useRef } from 'react';
 import { fadeInUp, staggerContainer } from '../../../lib/animations';
 import ServiceCard from '../../ui/ServiceCard';
@@ -60,6 +67,33 @@ export default function Services() {
               title='Board Certification'
               description="Enhance your board's effectiveness with our comprehensive certification program designed for directors."
               link='#board-certification'
+            />
+          </motion.div>
+
+          <motion.div variants={fadeInUp}>
+            <ServiceCard
+              icon={<ClipboardCheck size={28} />}
+              title='Regulatory Compliance'
+              description='Navigate complex regulatory landscapes with confidence through tailored compliance solutions that ensure adherence to industry standards and legal requirements.'
+              link='#regulatory-compliance'
+            />
+          </motion.div>
+
+          <motion.div variants={fadeInUp}>
+            <ServiceCard
+              icon={<NotebookPen size={28} />}
+              title='Company Secretarial'
+              description='Streamline corporate administration with expert company secretarial services that support regulatory filings, governance obligations, and statutory compliance.'
+              link='#company-secretarial'
+            />
+          </motion.div>
+
+          <motion.div variants={fadeInUp}>
+            <ServiceCard
+              icon={<HandHelping size={28} />}
+              title='Business Advisory'
+              description='Drive strategic growth and operational excellence with expert business advisory services tailored to your company’s unique challenges and opportunities.'
+              link='#business-advisory'
             />
           </motion.div>
         </motion.div>
