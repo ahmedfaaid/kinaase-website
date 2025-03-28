@@ -30,12 +30,12 @@ export default function LeadershipTeam() {
     },
     {
       name: 'Khalid Keith Iddisah',
-      position: 'Chief Operating Officer',
+      position: 'Chief Operations Officer',
       bio: "Khalid Keith Iddisah oversees Kinaase's operations, ensuring the efficient delivery of services and the implementation of strategic initiatives. With extensive experience in operations management and business process optimization, Khalid has a proven track record of improving organizational performance and client satisfaction. Before joining Kinaase, he served as the Operations Director for a global consulting firm, where he led teams across multiple regions and implemented innovative approaches to service delivery. Khalid holds an MBA from INSEAD and is certified in Lean Six Sigma. His operational expertise and client-focused approach have been instrumental in Kinaase's growth and success.",
       imageUrl:
-        'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      imageWidth: 606,
-      imageHeight: 909,
+        'https://www.seekpng.com/png/detail/966-9665317_placeholder-image-person-jpg.png',
+      imageWidth: 715,
+      imageHeight: 715,
       linkedinUrl: '#',
       twitterUrl: '#'
     }
