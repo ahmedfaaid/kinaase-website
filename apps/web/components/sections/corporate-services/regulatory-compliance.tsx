@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useRef } from 'react';
 import { fadeInUp } from '../../../lib/animations';
 
-export default function CorporateCompliance() {
+export default function RegulatoryCompliance() {
   const complianceRef = useRef<HTMLDivElement>(null);
   const inViewCompliance = useInView(complianceRef, {
     once: true,
@@ -14,7 +14,7 @@ export default function CorporateCompliance() {
 
   return (
     <section
-      id='corporate-compliance'
+      id='regulatory-compliance'
       className='section-padding'
       ref={complianceRef}
     >
@@ -44,7 +44,7 @@ export default function CorporateCompliance() {
             <span className='inline-block py-1 px-3 rounded-full bg-primary-softer text-primary-teal text-sm font-medium mb-4'>
               Service
             </span>
-            <h2 className='section-title mb-4'>Corporate Compliance</h2>
+            <h2 className='section-title mb-4'>Regulatory Compliance</h2>
             <p className='text-gray-600 mb-6'>
               Staying compliant with evolving regulations is crucial for
               mitigating risks and maintaining operational integrity. Our
