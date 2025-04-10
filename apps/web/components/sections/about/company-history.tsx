@@ -37,23 +37,25 @@ export default function CompanyHistory() {
             </span>
             <h2 className='section-title mb-4'>The Kinaase Journey</h2>
             <p className='text-gray-600 mb-6'>
-              Kinaase was founded in 2009 by a team of experienced professionals
-              who recognized the need for integrated corporate governance and
-              technology solutions. What began as a small consultancy has grown
-              into a respected firm serving clients across multiple industries.
+              <span className='font-semibold'>Kinaase</span> is a vibrant and
+              future-focused corporate services and technology company based in
+              Accra, Ghana. As a young but fast-growing firm, we are redefining
+              how businesses start, grow, and thrive in today’s digital economy.
+              Our unique blend of{' '}
+              <span className='italic'>
+                corporate support services, software development, and AI-powered
+                solutions
+              </span>{' '}
+              positions us as a one-stop partner for entrepreneurs, startups,
+              SMEs, and global brands entering or expanding within Ghana and the
+              West African region.
             </p>
             <p className='text-gray-600 mb-6'>
-              Over the years, we have continuously evolved our services to
-              address the changing business landscape, incorporating emerging
-              technologies and governance best practices to provide
-              comprehensive solutions that drive sustainable growth and success.
-            </p>
-            <p className='text-gray-600 mb-6'>
-              Today, Kinaase stands as a trusted partner for organizations
-              seeking to enhance their corporate governance structures and
-              leverage technology for business transformation, with a track
-              record of delivering measurable results for our diverse client
-              base.
+              We offer end-to-end services—from company registration and
+              compliance to intelligent software solutions that drive efficiency
+              and growth. Our agile team of professionals combines in-depth
+              regulatory knowledge with cutting-edge technology to deliver
+              results that matter.
             </p>
 
             <Link
