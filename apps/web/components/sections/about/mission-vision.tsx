@@ -38,14 +38,9 @@ export default function MissionVision() {
             </div>
             <h3 className='text-2xl font-semibold mb-4'>Our Mission</h3>
             <p className='text-gray-600 mb-4'>
-              To empower organizations with effective governance structures and
-              innovative technology solutions that drive sustainable growth,
-              operational excellence, and long-term success.
-            </p>
-            <p className='text-gray-600'>
-              We are committed to delivering exceptional value through our
-              expertise, fostering trust-based relationships, and continuously
-              evolving our services to meet the changing needs of our clients.
+              To empower businesses through smart, efficient, and innovative
+              corporate and technology solutions that support sustainable
+              growth.
             </p>
           </motion.div>
 
@@ -60,15 +55,8 @@ export default function MissionVision() {
             </div>
             <h3 className='text-2xl font-semibold mb-4'>Our Vision</h3>
             <p className='text-gray-600 mb-4'>
-              To be the premier provider of integrated corporate governance and
-              technology solutions, recognized for our innovation, expertise,
-              and commitment to client success.
-            </p>
-            <p className='text-gray-600'>
-              We aspire to set the standard for excellence in our industry,
-              helping organizations across all sectors establish robust
-              governance frameworks and leverage technology to achieve their
-              full potential.
+              To become a leading force in corporate and digital transformation
+              across Ghana and West Africa.
             </p>
           </motion.div>
         </div>
