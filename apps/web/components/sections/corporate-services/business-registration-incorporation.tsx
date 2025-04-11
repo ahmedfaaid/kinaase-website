@@ -99,7 +99,7 @@ export default function BusinessRegistrationIncorporation() {
           >
             <Image
               src='https://images.unsplash.com/photo-1648337564744-f919c7c2fc02?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
-              alt='Corporate governance'
+              alt='Business Registration & Incorporation'
               className='rounded-lg shadow-lg w-full h-auto'
               width={1000}
               height={667}
