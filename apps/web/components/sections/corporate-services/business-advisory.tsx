@@ -44,7 +44,9 @@ export default function BusinessAvisory() {
             <span className='inline-block py-1 px-3 rounded-full bg-primary-softer text-primary-teal text-sm font-medium mb-4'>
               Service
             </span>
-            <h2 className='section-title mb-4'>Business Advisory</h2>
+            <h2 className='section-title mb-4'>
+              Business Advisory & Consultancy
+            </h2>
             <p className='text-gray-600 mb-6'>
               Unlock new opportunities and drive sustainable growth with
               strategic business insights tailored to your organization. Our
