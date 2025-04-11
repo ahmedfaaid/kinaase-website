@@ -1,13 +1,13 @@
 'use client';
 
-import BoardCertification from '../../components/sections/corporate-services/board-certification';
 import BusinessAvisory from '../../components/sections/corporate-services/business-advisory';
+import BusinessRegistrationIncorporation from '../../components/sections/corporate-services/business-registration-incorporation';
 import CompanySecretarial from '../../components/sections/corporate-services/company-secretarial';
 import CorporateCta from '../../components/sections/corporate-services/corporate-cta';
-import CorporateGovernance from '../../components/sections/corporate-services/corporate-governance';
-import CorporateStructure from '../../components/sections/corporate-services/corporate-structure';
 import RegulatoryCompliance from '../../components/sections/corporate-services/regulatory-compliance';
 import Services from '../../components/sections/corporate-services/services';
+import TaxAccountingSupport from '../../components/sections/corporate-services/tax-accounting-support';
+import WorkResidencyPermits from '../../components/sections/corporate-services/work-residency-permits';
 import Hero from '../../components/sections/hero';
 import PageTransition from '../../components/ui/PageTransition';
 
@@ -25,14 +25,14 @@ export default function CorporateServices() {
         {/* Services Overview */}
         <Services />
 
-        {/* Corporate Governance */}
-        <CorporateGovernance />
+        {/* Business Registration & Incorporation */}
+        <BusinessRegistrationIncorporation />
 
-        {/* Corporate Structure */}
-        <CorporateStructure />
+        {/* Tax Accounting & Support */}
+        <TaxAccountingSupport />
 
-        {/* Board Certification */}
-        <BoardCertification />
+        {/* Work & Residency Permits */}
+        <WorkResidencyPermits />
 
         {/* Corporate Compliance */}
         <RegulatoryCompliance />
