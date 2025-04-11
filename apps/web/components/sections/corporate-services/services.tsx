@@ -1,11 +1,11 @@
 import { motion, useInView } from 'framer-motion';
 import {
+  Building2,
   ClipboardCheck,
+  FileSpreadsheet,
   HandHelping,
-  NotebookPen,
-  Shield,
-  User,
-  Users
+  Landmark,
+  NotebookPen
 } from 'lucide-react';
 import { useRef } from 'react';
 import { fadeInUp, staggerContainer } from '../../../lib/animations';
@@ -45,35 +45,35 @@ export default function Services() {
         >
           <motion.div variants={fadeInUp}>
             <ServiceCard
-              icon={<Shield size={28} />}
-              title='Corporate Governance'
-              description='Establish effective governance frameworks that align with industry best practices and regulatory requirements.'
-              link='#corporate-governance'
+              icon={<Building2 size={28} />}
+              title='Business Registration & Incorporation'
+              description='Establish your business with confidence through expert registration and incorporation services tailored to your jurisdiction and industry.'
+              link='#business-registration-incorporation'
             />
           </motion.div>
 
           <motion.div variants={fadeInUp}>
             <ServiceCard
-              icon={<User size={28} />}
-              title='Corporate Structure'
-              description='Create robust corporate structures that support business growth, optimize operations, and mitigate risks.'
-              link='#corporate-structure'
+              icon={<FileSpreadsheet size={28} />}
+              title='Tax & Accounting Support'
+              description='Maintain financial clarity and compliance with professional tax and accounting support tailored to your business needs.'
+              link='#tax-accounting-support'
             />
           </motion.div>
 
           <motion.div variants={fadeInUp}>
             <ServiceCard
-              icon={<Users size={28} />}
-              title='Board Certification'
-              description="Enhance your board's effectiveness with our comprehensive certification program designed for directors."
-              link='#board-certification'
+              icon={<Landmark size={28} />}
+              title='Work & Residency Permits'
+              description='Secure work and residency permits efficiently with our end-to-end immigration and relocation support.'
+              link='#work-residency-permits'
             />
           </motion.div>
 
           <motion.div variants={fadeInUp}>
             <ServiceCard
               icon={<ClipboardCheck size={28} />}
-              title='Regulatory Compliance'
+              title='Regulatory Compliance & Licensing'
               description='Navigate complex regulatory landscapes with confidence through tailored compliance solutions that ensure adherence to industry standards and legal requirements.'
               link='#regulatory-compliance'
             />
@@ -91,7 +91,7 @@ export default function Services() {
           <motion.div variants={fadeInUp}>
             <ServiceCard
               icon={<HandHelping size={28} />}
-              title='Business Advisory'
+              title='Business Advisory & Consultancy'
               description='Drive strategic growth and operational excellence with expert business advisory services tailored to your company’s unique challenges and opportunities.'
               link='#business-advisory'
             />
