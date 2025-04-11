@@ -5,36 +5,39 @@ import Link from 'next/link';
 import { useRef } from 'react';
 import { fadeInUp } from '../../../lib/animations';
 
-export default function CorporateGovernance() {
-  const governanceRef = useRef<HTMLDivElement>(null);
-  const inViewGovernance = useInView(governanceRef, {
+export default function BusinessRegistrationIncorporation() {
+  const businessRegistrationRef = useRef<HTMLDivElement>(null);
+  const inViewBusinessRegistration = useInView(businessRegistrationRef, {
     once: true,
     amount: 0.2
   });
 
   return (
     <section
-      id='corporate-governance'
+      id='business-registration-incorporation'
       className='section-padding bg-gray-50'
-      ref={governanceRef}
+      ref={businessRegistrationRef}
     >
       <div className='container-custom'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center'>
           <motion.div
             initial='hidden'
-            animate={inViewGovernance ? 'visible' : 'hidden'}
+            animate={inViewBusinessRegistration ? 'visible' : 'hidden'}
             variants={fadeInUp}
           >
             <span className='inline-block py-1 px-3 rounded-full bg-primary-softer text-primary-teal text-sm font-medium mb-4'>
               Service
             </span>
-            <h2 className='section-title mb-4'>Corporate Governance</h2>
+            <h2 className='section-title mb-4'>
+              Business Registration & Incorporation
+            </h2>
             <p className='text-gray-600 mb-6'>
-              Effective corporate governance is essential for organizational
-              success, providing the framework for ethical decision-making, risk
-              management, and sustainable growth. Our governance services help
-              organizations establish robust structures that balance stakeholder
-              interests and ensure accountability.
+              Starting a business begins with a solid legal foundation. Our
+              business registration and incorporation services guide you through
+              every step of forming a compliant and well-structured entity. From
+              choosing the right legal structure to navigating local regulatory
+              requirements, we ensure your business is set up for long-term
+              success and operational efficiency.
             </p>
 
             <div className='space-y-4 mb-8'>
@@ -43,7 +46,7 @@ export default function CorporateGovernance() {
                   <Check size={16} />
                 </span>
                 <p className='text-gray-600'>
-                  Governance framework development and implementation
+                  Entity selection and jurisdictional guidance
                 </p>
               </div>
               <div className='flex items-start'>
@@ -51,7 +54,7 @@ export default function CorporateGovernance() {
                   <Check size={16} />
                 </span>
                 <p className='text-gray-600'>
-                  Board structure and committee design
+                  Business name reservation and documentation
                 </p>
               </div>
               <div className='flex items-start'>
@@ -59,7 +62,7 @@ export default function CorporateGovernance() {
                   <Check size={16} />
                 </span>
                 <p className='text-gray-600'>
-                  Corporate governance policy development
+                  Company incorporation and registration filings
                 </p>
               </div>
               <div className='flex items-start'>
@@ -67,7 +70,7 @@ export default function CorporateGovernance() {
                   <Check size={16} />
                 </span>
                 <p className='text-gray-600'>
-                  Governance audits and compliance assessments
+                  Shareholder and director structuring
                 </p>
               </div>
               <div className='flex items-start'>
@@ -75,7 +78,7 @@ export default function CorporateGovernance() {
                   <Check size={16} />
                 </span>
                 <p className='text-gray-600'>
-                  Stakeholder engagement strategies
+                  Ongoing support for compliance and renewal requirements
                 </p>
               </div>
             </div>
@@ -91,11 +94,11 @@ export default function CorporateGovernance() {
 
           <motion.div
             initial='hidden'
-            animate={inViewGovernance ? 'visible' : 'hidden'}
+            animate={inViewBusinessRegistration ? 'visible' : 'hidden'}
             variants={fadeInUp}
           >
             <Image
-              src='https://images.unsplash.com/photo-1573164574572-cb89e39749b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
+              src='https://images.unsplash.com/photo-1648337564744-f919c7c2fc02?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
               alt='Corporate governance'
               className='rounded-lg shadow-lg w-full h-auto'
               width={1000}
