@@ -1,9 +1,11 @@
 'use client';
 
 import AboutCta from '../../components/sections/about/about-cta';
+import ChooseUs from '../../components/sections/about/choose-us';
 import CompanyHistory from '../../components/sections/about/company-history';
 import CoreValues from '../../components/sections/about/core-values';
 import MissionVision from '../../components/sections/about/mission-vision';
+import SetUsApart from '../../components/sections/about/set-us-apart';
 import Hero from '../../components/sections/hero';
 import PageTransition from '../../components/ui/PageTransition';
 
@@ -26,6 +28,12 @@ export default function About() {
 
         {/* Core Values */}
         <CoreValues />
+
+        {/* What Sets Us Apart */}
+        <SetUsApart />
+
+        {/* Why Choose Us */}
+        <ChooseUs />
 
         {/* CTA Section */}
         <AboutCta />
