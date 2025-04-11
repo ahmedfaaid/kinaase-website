@@ -5,38 +5,37 @@ import Link from 'next/link';
 import { useRef } from 'react';
 import { fadeInUp } from '../../../lib/animations';
 
-export default function BoardCertification() {
-  const certificationRef = useRef<HTMLDivElement>(null);
-  const inViewCertification = useInView(certificationRef, {
+export default function WorkResidencyPermits() {
+  const workResidencyPermitsRef = useRef<HTMLDivElement>(null);
+  const inViewWorkResidencyPermits = useInView(workResidencyPermitsRef, {
     once: true,
     amount: 0.2
   });
 
   return (
     <section
-      id='board-certification'
+      id='work-residency-permits'
       className='section-padding bg-gray-50'
-      ref={certificationRef}
+      ref={workResidencyPermitsRef}
     >
       <div className='container-custom'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center'>
           <motion.div
             initial='hidden'
-            animate={inViewCertification ? 'visible' : 'hidden'}
+            animate={inViewWorkResidencyPermits ? 'visible' : 'hidden'}
             variants={fadeInUp}
           >
             <span className='inline-block py-1 px-3 rounded-full bg-primary-softer text-primary-teal text-sm font-medium mb-4'>
               Service
             </span>
-            <h2 className='section-title mb-4'>
-              Board of Directors Certification
-            </h2>
+            <h2 className='section-title mb-4'>Work & Residency Permits</h2>
             <p className='text-gray-600 mb-6'>
-              An effective board of directors is critical for organizational
-              governance and strategic direction. Our board certification
-              program equips directors with the knowledge, skills, and best
-              practices necessary to fulfill their fiduciary responsibilities
-              and contribute to organizational success.
+              Navigating immigration requirements can be complex. Our work and
+              residency permit services help businesses and professionals obtain
+              the necessary documentation to live and work legally in their
+              desired location. From application preparation to government
+              liaison, we provide a seamless process that ensures compliance and
+              minimizes delays.
             </p>
 
             <div className='space-y-4 mb-8'>
@@ -45,21 +44,7 @@ export default function BoardCertification() {
                   <Check size={16} />
                 </span>
                 <p className='text-gray-600'>
-                  Comprehensive director certification programs
-                </p>
-              </div>
-              <div className='flex items-start'>
-                <span className='rounded-full bg-primary-softer p-1 mr-3 text-primary-teal'>
-                  <Check size={16} />
-                </span>
-                <p className='text-gray-600'>Board effectiveness assessments</p>
-              </div>
-              <div className='flex items-start'>
-                <span className='rounded-full bg-primary-softer p-1 mr-3 text-primary-teal'>
-                  <Check size={16} />
-                </span>
-                <p className='text-gray-600'>
-                  Director orientation and onboarding
+                  Work permit application and processing
                 </p>
               </div>
               <div className='flex items-start'>
@@ -67,7 +52,7 @@ export default function BoardCertification() {
                   <Check size={16} />
                 </span>
                 <p className='text-gray-600'>
-                  Continuing education for board members
+                  Residency visa acquisition and renewal
                 </p>
               </div>
               <div className='flex items-start'>
@@ -75,7 +60,23 @@ export default function BoardCertification() {
                   <Check size={16} />
                 </span>
                 <p className='text-gray-600'>
-                  Board succession planning and director recruitment
+                  Employer sponsorship and compliance support
+                </p>
+              </div>
+              <div className='flex items-start'>
+                <span className='rounded-full bg-primary-softer p-1 mr-3 text-primary-teal'>
+                  <Check size={16} />
+                </span>
+                <p className='text-gray-600'>
+                  Immigration document preparation and filing
+                </p>
+              </div>
+              <div className='flex items-start'>
+                <span className='rounded-full bg-primary-softer p-1 mr-3 text-primary-teal'>
+                  <Check size={16} />
+                </span>
+                <p className='text-gray-600'>
+                  Advisory for relocation and international mobility
                 </p>
               </div>
             </div>
@@ -91,12 +92,12 @@ export default function BoardCertification() {
 
           <motion.div
             initial='hidden'
-            animate={inViewCertification ? 'visible' : 'hidden'}
+            animate={inViewWorkResidencyPermits ? 'visible' : 'hidden'}
             variants={fadeInUp}
           >
             <Image
-              src='https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
-              alt='Board certification'
+              src='https://images.unsplash.com/photo-1562577309-d67db487e6cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
+              alt='Work & Residency Permits'
               className='rounded-lg shadow-lg w-full h-auto'
               width={1000}
               height={667}
