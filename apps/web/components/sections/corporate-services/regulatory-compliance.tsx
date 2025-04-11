@@ -44,7 +44,9 @@ export default function RegulatoryCompliance() {
             <span className='inline-block py-1 px-3 rounded-full bg-primary-softer text-primary-teal text-sm font-medium mb-4'>
               Service
             </span>
-            <h2 className='section-title mb-4'>Regulatory Compliance</h2>
+            <h2 className='section-title mb-4'>
+              Regulatory Compliance & Licensing
+            </h2>
             <p className='text-gray-600 mb-6'>
               Staying compliant with evolving regulations is crucial for
               mitigating risks and maintaining operational integrity. Our
