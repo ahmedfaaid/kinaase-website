@@ -5,27 +5,30 @@ import Link from 'next/link';
 import { useRef } from 'react';
 import { fadeInUp } from '../../../lib/animations';
 
-export default function CorporateStructure() {
-  const structureRef = useRef<HTMLDivElement>(null);
-  const inViewStructure = useInView(structureRef, { once: true, amount: 0.2 });
+export default function TaxAccountingSupport() {
+  const taxAccountingSupportRef = useRef<HTMLDivElement>(null);
+  const inViewTaxAccountingSupport = useInView(taxAccountingSupportRef, {
+    once: true,
+    amount: 0.2
+  });
 
   return (
     <section
-      id='corporate-structure'
+      id='tax-accounting-support'
       className='section-padding'
-      ref={structureRef}
+      ref={taxAccountingSupportRef}
     >
       <div className='container-custom'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center'>
           <motion.div
             initial='hidden'
-            animate={inViewStructure ? 'visible' : 'hidden'}
+            animate={inViewTaxAccountingSupport ? 'visible' : 'hidden'}
             variants={fadeInUp}
             className='order-2 lg:order-1'
           >
             <Image
-              src='https://images.unsplash.com/photo-1590650153855-d9e808231d41?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
-              alt='Corporate structure'
+              src='https://images.unsplash.com/photo-1709880945165-d2208c6ad2ec?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
+              alt='Tax Accounting Support'
               className='rounded-lg shadow-lg w-full h-auto'
               width={1000}
               height={667}
@@ -34,20 +37,22 @@ export default function CorporateStructure() {
 
           <motion.div
             initial='hidden'
-            animate={inViewStructure ? 'visible' : 'hidden'}
+            animate={inViewTaxAccountingSupport ? 'visible' : 'hidden'}
             variants={fadeInUp}
             className='order-1 lg:order-2'
           >
             <span className='inline-block py-1 px-3 rounded-full bg-primary-softer text-primary-teal text-sm font-medium mb-4'>
               Service
             </span>
-            <h2 className='section-title mb-4'>Corporate Structure</h2>
+            <h2 className='section-title mb-4'>Tax & Accounting Support</h2>
             <p className='text-gray-600 mb-6'>
-              A well-designed corporate structure is fundamental to
-              organizational effectiveness, supporting efficient operations,
-              clear accountability, and strategic growth. Our corporate
-              structure services help organizations develop frameworks that
-              align with their business objectives and regulatory requirements.
+              Sound financial management is key to sustaining and growing your
+              business. Our tax and accounting support services help
+              organizations streamline financial reporting, meet tax
+              obligations, and optimize their fiscal strategies. Whether you’re
+              a startup or a growing enterprise, we provide accurate, timely,
+              and compliant financial insights that drive informed
+              decision-making.
             </p>
 
             <div className='space-y-4 mb-8'>
@@ -56,7 +61,7 @@ export default function CorporateStructure() {
                   <Check size={16} />
                 </span>
                 <p className='text-gray-600'>
-                  Organizational structure design and optimization
+                  Bookkeeping and financial statement preparation
                 </p>
               </div>
               <div className='flex items-start'>
@@ -64,7 +69,7 @@ export default function CorporateStructure() {
                   <Check size={16} />
                 </span>
                 <p className='text-gray-600'>
-                  Corporate restructuring and reorganization
+                  Corporate and individual tax filings
                 </p>
               </div>
               <div className='flex items-start'>
@@ -72,7 +77,7 @@ export default function CorporateStructure() {
                   <Check size={16} />
                 </span>
                 <p className='text-gray-600'>
-                  Subsidiary governance and management
+                  Tax planning and compliance advisory
                 </p>
               </div>
               <div className='flex items-start'>
@@ -80,7 +85,7 @@ export default function CorporateStructure() {
                   <Check size={16} />
                 </span>
                 <p className='text-gray-600'>
-                  Corporate entity rationalization
+                  Payroll processing and statutory contributions
                 </p>
               </div>
               <div className='flex items-start'>
@@ -88,7 +93,7 @@ export default function CorporateStructure() {
                   <Check size={16} />
                 </span>
                 <p className='text-gray-600'>
-                  Merger and acquisition structure planning
+                  Financial audits and reporting support
                 </p>
               </div>
             </div>
