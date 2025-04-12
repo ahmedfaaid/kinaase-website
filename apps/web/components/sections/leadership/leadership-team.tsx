@@ -1,45 +1,12 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { fadeInUp, staggerContainer } from '../../../lib/animations';
+import { leadershipTeam } from '../../../lib/leadership';
 import ProfileCard from '../../ui/ProfileCard';
 
 export default function LeadershipTeam() {
   const teamRef = useRef<HTMLDivElement>(null);
   const inViewTeam = useInView(teamRef, { once: true, amount: 0.2 });
-
-  const leadershipTeam = [
-    {
-      name: 'Yasmine Wuruche Alhassan',
-      position: 'Chief Executive Officer',
-      bio: 'Yasmine Wuruche Alhassan is the visionary leader behind Kinaase, bringing over 20 years of experience in corporate governance and strategic leadership. Prior to founding Kinaase, Yasmine held executive positions at several multinational corporations, where she led initiatives to strengthen governance structures and improve board effectiveness. She holds an MBA from Harvard Business School and serves on multiple corporate and non-profit boards. Her expertise in corporate governance has made her a sought-after speaker and advisor for organizations seeking to enhance their governance frameworks.',
-      imageUrl: '/images/leadership/yassy-1.jpeg',
-      imageWidth: 877,
-      imageHeight: 1080,
-      linkedinUrl: '#',
-      twitterUrl: '#'
-    },
-    {
-      name: 'Ahmed Faaid Alhassan',
-      position: 'Chief Technology Officer',
-      bio: "Ahmed Faaid Alhassan leads Kinaase's technology initiatives, bringing a wealth of experience in digital transformation, AI implementation, and technology strategy. With a background in computer science and an advanced degree in artificial intelligence from MIT, Ahmed has spearheaded numerous successful technology projects for Fortune 500 companies. Before joining Kinaase, he was the Head of Digital Innovation at a leading technology consulting firm, where he developed cutting-edge solutions for complex business challenges. Ahmed is passionate about leveraging technology to drive business value and is recognized as a thought leader in the field of AI and machine learning.",
-      imageUrl: '/images/leadership/ahmed-1.jpg',
-      imageWidth: 1024,
-      imageHeight: 683,
-      linkedinUrl: '#',
-      twitterUrl: '#'
-    },
-    {
-      name: 'Khalid Keith Iddisah',
-      position: 'Chief Operations Officer',
-      bio: "Khalid Keith Iddisah oversees Kinaase's operations, ensuring the efficient delivery of services and the implementation of strategic initiatives. With extensive experience in operations management and business process optimization, Khalid has a proven track record of improving organizational performance and client satisfaction. Before joining Kinaase, he served as the Operations Director for a global consulting firm, where he led teams across multiple regions and implemented innovative approaches to service delivery. Khalid holds an MBA from INSEAD and is certified in Lean Six Sigma. His operational expertise and client-focused approach have been instrumental in Kinaase's growth and success.",
-      imageUrl:
-        'https://www.seekpng.com/png/detail/966-9665317_placeholder-image-person-jpg.png',
-      imageWidth: 715,
-      imageHeight: 715,
-      linkedinUrl: '#',
-      twitterUrl: '#'
-    }
-  ];
 
   return (
     <section className='section-padding' ref={teamRef}>
@@ -72,7 +39,7 @@ export default function LeadershipTeam() {
               <ProfileCard
                 name={leader.name}
                 position={leader.position}
-                bio={leader.bio}
+                bio={leader.bio.excerpt}
                 imageUrl={leader.imageUrl}
                 linkedinUrl={leader.linkedinUrl}
                 twitterUrl={leader.twitterUrl}
