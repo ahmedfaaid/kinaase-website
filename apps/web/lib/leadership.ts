@@ -20,7 +20,8 @@ export const leadershipTeam = [
     imageWidth: 877,
     imageHeight: 1080,
     linkedinUrl: '#',
-    twitterUrl: '#'
+    twitterUrl: '#',
+    profileUrl: '/leadership/chief-executive-officer'
   },
   {
     name: 'Ahmed Faaid Alhassan',
