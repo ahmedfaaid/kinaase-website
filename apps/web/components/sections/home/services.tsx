@@ -1,12 +1,12 @@
 import { motion, useInView } from 'framer-motion';
 import {
   Brain,
+  Building2,
   ChevronRight,
   Cpu,
-  Server,
-  Shield,
-  User,
-  Users
+  FileSpreadsheet,
+  Landmark,
+  Server
 } from 'lucide-react';
 import Link from 'next/link';
 import { useRef } from 'react';
@@ -46,28 +46,28 @@ export default function Services() {
         >
           <motion.div variants={fadeInUp}>
             <ServiceCard
-              icon={<Shield size={28} />}
-              title='Corporate Governance'
-              description='Establish effective governance structures that align with industry best practices and regulatory requirements.'
-              link='/corporate-services'
+              icon={<Building2 size={28} />}
+              title='Business Registration & Incorporation'
+              description='Establish your business with confidence through expert registration and incorporation services tailored to your jurisdiction and industry.'
+              link='/corporate-services#business-registration-incorporation'
             />
           </motion.div>
 
           <motion.div variants={fadeInUp}>
             <ServiceCard
-              icon={<User size={28} />}
-              title='Corporate Structure'
-              description='Create robust corporate structures that support business growth, optimize operations, and mitigate risks.'
-              link='/corporate-services'
+              icon={<FileSpreadsheet size={28} />}
+              title='Tax & Accounting Support'
+              description='Maintain financial clarity and compliance with professional tax and accounting support tailored to your business needs.'
+              link='/corporate-services#tax-accounting-support'
             />
           </motion.div>
 
           <motion.div variants={fadeInUp}>
             <ServiceCard
-              icon={<Users size={28} />}
-              title='Board Certification'
-              description="Enhance your board's effectiveness with our comprehensive certification program designed for directors."
-              link='/corporate-services'
+              icon={<Landmark size={28} />}
+              title='Work & Residency Permits'
+              description='Secure work and residency permits efficiently with our end-to-end immigration and relocation support.'
+              link='/corporate-services#work-residency-permits'
             />
           </motion.div>
 
@@ -76,7 +76,7 @@ export default function Services() {
               icon={<Brain size={28} />}
               title='AI Consulting'
               description='Harness the power of artificial intelligence to improve efficiency, make better decisions, and drive innovation.'
-              link='/technology-services'
+              link='/technology-services#ai-consulting'
             />
           </motion.div>
 
@@ -85,7 +85,7 @@ export default function Services() {
               icon={<Cpu size={28} />}
               title='Technology Strategy'
               description='Develop a tailored technology strategy that aligns with your business goals and provides a competitive advantage.'
-              link='/technology-services'
+              link='/technology-services#technology-strategy'
             />
           </motion.div>
 
@@ -94,7 +94,7 @@ export default function Services() {
               icon={<Server size={28} />}
               title='IT Infrastructure'
               description='Build and manage robust IT infrastructure that ensures reliability, security, and scalability for your operations.'
-              link='/technology-services'
+              link='/technology-services#it-infrastructure'
             />
           </motion.div>
         </motion.div>
