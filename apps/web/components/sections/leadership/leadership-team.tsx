@@ -45,6 +45,7 @@ export default function LeadershipTeam() {
                 twitterUrl={leader.twitterUrl}
                 imageWidth={leader.imageWidth}
                 imageHeight={leader.imageHeight}
+                profileUrl={leader.profileUrl}
               />
             </motion.div>
           ))}

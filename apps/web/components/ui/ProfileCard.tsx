@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Linkedin, Twitter } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 
 type ProfileCardProps = {
@@ -12,6 +13,7 @@ type ProfileCardProps = {
   twitterUrl?: string;
   imageWidth?: number;
   imageHeight?: number;
+  profileUrl?: string;
 };
 
 const ProfileCard = ({
@@ -22,7 +24,8 @@ const ProfileCard = ({
   linkedinUrl,
   twitterUrl,
   imageWidth = 1000,
-  imageHeight = 1000
+  imageHeight = 1000,
+  profileUrl
 }: ProfileCardProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -79,6 +82,14 @@ const ProfileCard = ({
           transition={{ duration: 0.3 }}
         >
           {bio}
+          {profileUrl && (
+            <Link
+              href={profileUrl}
+              className='text-primary-light font-thin hover:text-primary-teal transition-colors'
+            >
+              View Profile
+            </Link>
+          )}
         </motion.div>
 
         <button
