@@ -92,12 +92,14 @@ const ProfileCard = ({
           )}
         </motion.div>
 
-        <button
-          onClick={() => setIsExpanded(!isExpanded)}
-          className='mt-3 text-primary-teal font-medium hover:text-primary-light transition-colors'
-        >
-          {isExpanded ? 'Read Less' : 'Read More'}
-        </button>
+        {bio && (
+          <button
+            onClick={() => setIsExpanded(!isExpanded)}
+            className='mt-3 text-primary-teal font-medium hover:text-primary-light transition-colors'
+          >
+            {isExpanded ? 'Read Less' : 'Read More'}
+          </button>
+        )}
       </div>
     </motion.div>
   );
