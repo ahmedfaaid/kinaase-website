@@ -18,6 +18,7 @@ export async function POST(request: NextRequest) {
     const info = await transporter.sendMail({
       from: `"Website Contact Form" <${process.env.SMTP_FROM}>`,
       to: process.env.SMTP_TO,
+      cc: [process.env.CEO_CC!, process.env.CTO_CC!],
       subject,
       replyTo: email,
       text: message.text,
