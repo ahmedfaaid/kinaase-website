@@ -8,7 +8,8 @@
     "SMTP_PASS",
     "SMTP_FROM",
     "SMTP_TO",
-    "MAILER_SEND_DOMAIN"
+    "CEO_CC",
+    "CTO_CC"
   ],
   "tasks": {
     "build": {
