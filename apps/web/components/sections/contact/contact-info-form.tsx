@@ -37,9 +37,7 @@ export default function ContactInfoForm() {
                 </div>
                 <div>
                   <h3 className='text-lg font-semibold mb-1'>Our Office</h3>
-                  <p className='text-gray-600'>
-                    123 Business District, Accra, Ghana
-                  </p>
+                  <p className='text-gray-600'>Dzorwulu, Accra, Ghana</p>
                 </div>
               </div>
 
@@ -49,7 +47,9 @@ export default function ContactInfoForm() {
                 </div>
                 <div>
                   <h3 className='text-lg font-semibold mb-1'>Phone</h3>
-                  <p className='text-gray-600'>+233 30 123 4567</p>
+                  <p className='text-gray-600'>+233 24 260 1859</p>
+                  <p className='text-gray-600'>+233 20 115 2500</p>
+                  <p className='text-gray-600'>+233 20 115 2600</p>
                 </div>
               </div>
 
