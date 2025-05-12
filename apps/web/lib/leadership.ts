@@ -27,8 +27,7 @@ export const leadershipTeam = [
     name: 'Ahmed Faaid Alhassan',
     position: 'Chief Technology Officer',
     bio: {
-      excerpt:
-        "Ahmed Faaid Alhassan leads Kinaase's technology initiatives, bringing a wealth of experience in digital transformation, AI implementation, and technology strategy. With a background in computer science and an advanced degree in artificial intelligence from MIT, Ahmed has spearheaded numerous successful technology projects for Fortune 500 companies. Before joining Kinaase, he was the Head of Digital Innovation at a leading technology consulting firm, where he developed cutting-edge solutions for complex business challenges. Ahmed is passionate about leveraging technology to drive business value and is recognized as a thought leader in the field of AI and machine learning.",
+      excerpt: '',
       full: '',
       professionalHighlights: [],
       educationAffiliations: '',
@@ -44,8 +43,7 @@ export const leadershipTeam = [
     name: 'Khalid Keith Iddisah',
     position: 'Chief Operations Officer',
     bio: {
-      excerpt:
-        "Khalid Keith Iddisah oversees Kinaase's operations, ensuring the efficient delivery of services and the implementation of strategic initiatives. With extensive experience in operations management and business process optimization, Khalid has a proven track record of improving organizational performance and client satisfaction. Before joining Kinaase, he served as the Operations Director for a global consulting firm, where he led teams across multiple regions and implemented innovative approaches to service delivery. Khalid holds an MBA from INSEAD and is certified in Lean Six Sigma. His operational expertise and client-focused approach have been instrumental in Kinaase's growth and success.",
+      excerpt: '',
       full: '',
       professionalHighlights: [],
       educationAffiliations: '',
