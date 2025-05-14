@@ -6,16 +6,73 @@ import Providers from '../components/providers';
 import { Toaster as Sonner } from '../components/ui/sonner';
 import { Toaster } from '../components/ui/toaster';
 import { TooltipProvider } from '../components/ui/tooltip';
+import {
+  defaultDescription,
+  defaultTitle,
+  keywords,
+  kinaaseUrl
+} from '../lib/constants';
 import './globals.css';
 import Template from './template';
 
 export const metadata: Metadata = {
-  title: 'Kinaase',
-  description:
-    '“Discover Kinaase Ltd, your trusted corporate services partner, offering expert solutions in corporate governance, business advisory, branding, HR management, and comprehensive IT services, including AI consulting, technology strategy, IT infrastructure, and application support. We empower businesses with tailored strategies for growth, compliance, and operational excellence. Let’s drive success together!”',
+  metadataBase: new URL(kinaaseUrl),
+  title: {
+    default: defaultTitle,
+    template: '%s | Kinaase Ltd'
+  },
+  description: defaultDescription,
+  keywords,
+  formatDetection: {
+    email: true,
+    address: true,
+    telephone: true
+  },
+  openGraph: {
+    title: defaultTitle,
+    description: defaultDescription,
+    url: kinaaseUrl,
+    siteName: defaultTitle,
+    locale: 'en_GH',
+    type: 'website',
+    images: [
+      {
+        url: `${kinaaseUrl}/images/logo/kinaase logo-06.svg`,
+        width: 800,
+        height: 800,
+        alt: 'Kinaase Ltd'
+      }
+    ]
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
+    }
+  },
   icons: {
-    icon: '/images/logo/kinaase logo-06.svg'
-  }
+    icon: '/images/logo/kinaase logo-06.svg',
+    shortcut: '/images/logo/kinaase logo-06.svg',
+    apple: '/images/logo/kinaase logo-06.svg',
+    other: {
+      rel: 'apple-touch-icon-precomposed',
+      url: '/images/logo/kinaase logo-06.svg'
+    }
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: defaultTitle,
+    description: defaultDescription,
+    images: [`${kinaaseUrl}/images/logo/kinaase logo-06.svg`]
+  },
+  manifest: `${kinaaseUrl}/site.webmanifest`
 };
 
 export default function RootLayout({
