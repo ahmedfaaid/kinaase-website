@@ -9,7 +9,8 @@
     "SMTP_FROM",
     "SMTP_TO",
     "CEO_CC",
-    "CTO_CC"
+    "CTO_CC",
+    "NODE_ENV"
   ],
   "tasks": {
     "build": {
