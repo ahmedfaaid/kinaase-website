@@ -122,43 +122,43 @@ export default function Footer() {
             <ul className='space-y-2'>
               <li>
                 <Link
-                  href='/corporate-services'
+                  href='/corporate-services#business-registration-incorporation'
                   className='text-gray-400 hover:text-white transition-colors flex items-center group'
                 >
                   <ArrowRight
                     size={16}
                     className='mr-2 opacity-0 group-hover:opacity-100 transition-opacity'
                   />
-                  Corporate Governance
+                  Business Registration & Incorporation
                 </Link>
               </li>
               <li>
                 <Link
-                  href='/corporate-services'
+                  href='/corporate-services#tax-accounting-support'
                   className='text-gray-400 hover:text-white transition-colors flex items-center group'
                 >
                   <ArrowRight
                     size={16}
                     className='mr-2 opacity-0 group-hover:opacity-100 transition-opacity'
                   />
-                  Corporate Structure
+                  Tax & Accounting Support
                 </Link>
               </li>
               <li>
                 <Link
-                  href='/corporate-services'
+                  href='/corporate-services#work-residency-permits'
                   className='text-gray-400 hover:text-white transition-colors flex items-center group'
                 >
                   <ArrowRight
                     size={16}
                     className='mr-2 opacity-0 group-hover:opacity-100 transition-opacity'
                   />
-                  Board Certification
+                  Work & Residency Permits
                 </Link>
               </li>
               <li>
                 <Link
-                  href='/technology-services'
+                  href='/technology-services#ai-consulting'
                   className='text-gray-400 hover:text-white transition-colors flex items-center group'
                 >
                   <ArrowRight
@@ -170,7 +170,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href='/technology-services'
+                  href='/technology-services#technology-strategy'
                   className='text-gray-400 hover:text-white transition-colors flex items-center group'
                 >
                   <ArrowRight
@@ -178,6 +178,18 @@ export default function Footer() {
                     className='mr-2 opacity-0 group-hover:opacity-100 transition-opacity'
                   />
                   Technology Strategy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href='/technology-services#it-infrastructure'
+                  className='text-gray-400 hover:text-white transition-colors flex items-center group'
+                >
+                  <ArrowRight
+                    size={16}
+                    className='mr-2 opacity-0 group-hover:opacity-100 transition-opacity'
+                  />
+                  IT Infrastructure Management
                 </Link>
               </li>
             </ul>
@@ -192,13 +204,19 @@ export default function Footer() {
                   className='mr-3 shrink-0 text-primary-light'
                   size={20}
                 />
-                <span className='text-gray-400'>
-                  123 Business District, Accra, Ghana
-                </span>
+                <span className='text-gray-400'>Dzorwulu, Accra, Ghana</span>
               </li>
               <li className='flex items-center'>
                 <Phone className='mr-3 shrink-0 text-primary-light' size={20} />
-                <span className='text-gray-400'>+233 30 123 4567</span>
+                <span className='text-gray-400'>+233 24 260 1859</span>
+              </li>
+              <li className='flex items-center'>
+                <Phone className='mr-3 shrink-0 text-primary-light' size={20} />
+                <span className='text-gray-400'>+233 20 115 3500</span>
+              </li>
+              <li className='flex items-center'>
+                <Phone className='mr-3 shrink-0 text-primary-light' size={20} />
+                <span className='text-gray-400'>+233 20 115 2600</span>
               </li>
               <li className='flex items-center'>
                 <Mail className='mr-3 shrink-0 text-primary-light' size={20} />
