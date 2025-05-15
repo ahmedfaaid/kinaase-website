@@ -37,9 +37,9 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: new URL(`${kinaaseUrl}/images/logo/kinaase logo-06.svg`),
+        url: new URL(`${kinaaseUrl}/api/open-graph`),
         width: 800,
-        height: 800,
+        height: 600,
         alt: 'Kinaase Ltd'
       }
     ]
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: defaultTitle,
     description: defaultDescription,
-    images: [new URL(`${kinaaseUrl}/images/logo/kinaase logo-06.svg`)]
+    images: [new URL(`${kinaaseUrl}/api/open-graph`)]
   },
   manifest: new URL(`${kinaaseUrl}/site.webmanifest`)
 };
