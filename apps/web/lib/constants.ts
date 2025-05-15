@@ -1,5 +1,8 @@
 export const invenzaUrl = 'https://invenza.kinaase.com';
-export const kinaaseUrl = 'https://kinaase.com';
+export const kinaaseUrl =
+  process.env.NODE_ENV === 'production'
+    ? 'https://kinaase.com'
+    : 'http://localhost:3000';
 export const defaultTitle = 'Kinaase Ltd';
 export const defaultDescription =
   'Future-ready corporate services & AI-driven tech solutions in Ghana. Kinaase delivers expert business registration, compliance, and AI-driven tech consulting in Ghana. Kinaase helps businesses launch, grow & thrive across West Africa.';
